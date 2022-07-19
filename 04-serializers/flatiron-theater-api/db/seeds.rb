@@ -1,3 +1,5 @@
+puts "🌱 Seeding database"
+
 p1 = Production.create(title: 'Hamlet', genre: 'drama', director:'Bill Shakespeare', description:'The Tragedy of Hamlet, Prince of Denmark', budget: 100000.00, image:'https://upload.wikimedia.org/wikipedia/commons/6/6a/Edwin_Booth_Hamlet_1870.jpg', ongoing:true)
 p2 = Production.create(title: 'cats', genre: 'musical', director:'Andrew Lloyd Webber', description:' Jellicles cats sing and dance', budget: 200000.00, image:'https://upload.wikimedia.org/wikipedia/en/3/3e/CatsMusicalLogo.jpg', ongoing:true)
 p3 = Production.create(title:'Hamilton', genre: 'musical', director:'Lin-Manuel Miranda', description:'An American Musical is a sung-and-rapped-through musical by Lin-Manuel Miranda. It tells the story of American Founding Father Alexander Hamilton. ', budget: 240000.00, image:'https://m.media-amazon.com/images/M/MV5BNjViNWRjYWEtZTI0NC00N2E3LTk0NGQtMjY4NTM3OGNkZjY0XkEyXkFqcGdeQXVyMjUxMTY3ODM@._V1_.jpg', ongoing:true)
@@ -58,3 +60,5 @@ Ticket.create(user:u5, production:p1, price:65.00)
 Ticket.create(user:u5, production:p2, price:65.00)
 Ticket.create(user:u6, production:p1, price:65.00)
 Ticket.create(user:u6, production:p2, price:65.00)
+
+puts "🌱 Seeding complete!"

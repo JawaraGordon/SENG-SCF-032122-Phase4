@@ -5,7 +5,8 @@ class UsersController < ApplicationController
     end 
 
     def show
-        user = User.find(params[:id])
+        #refactor
+        user = find_user
         render json: user
     end 
     def create
@@ -19,6 +20,8 @@ class UsersController < ApplicationController
         params.permit(:name, :email)
     end 
 
-   
+   def find_user
+    User.find(params[:id])
+   end
 
 end
