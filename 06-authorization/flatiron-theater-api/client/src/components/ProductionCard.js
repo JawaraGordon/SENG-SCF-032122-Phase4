@@ -1,4 +1,4 @@
-
+import {Link} from 'react-router-dom'
 
 function ProductionCard({production}) {
     const {title, budget, genre, image} = production
